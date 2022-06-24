@@ -212,18 +212,6 @@ void icb_straightened_copy(iCircularBuffer *buffer, iCircularBuffer *straightene
 void fcb_straightened_copy(fCircularBuffer *buffer, fCircularBuffer *straightened_buffer);
 
 /**
- * \fn fcb_remove_at(fCircularBuffer *buffer, int position
- * \brief Removes a value at a specific position
- *
- * \param buffer A pointer to the buffer object
- * \param index index of the value to be removed
- * \return The mean value
- */
-void fcb_remove_at(fCircularBuffer *buffer, int index);
-
-
-
-/**
  * \fn icb_remove_at_timeindex(iCircularBuffer *buffer, int position
  * \brief Removes a value at a specific index (please consider straightening the buffer if you want to remove at timed position)
  *
@@ -231,7 +219,7 @@ void fcb_remove_at(fCircularBuffer *buffer, int index);
  * \param index index of the value to be removed
  * \return Nothing
  */
-void icb_remove_at_timeindex(iCircularBuffer *buffer, int index)<<;
+void icb_remove_at_timeindex(iCircularBuffer *buffer, int index);
 
 /**
  * \fn fcb_remove_at_timeindex(fCircularBuffer *buffer, int position
